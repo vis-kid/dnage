@@ -14,13 +14,17 @@
 @import 'bourbon';
 @import 'neat';
 @import 'grid-settings';
-@import 'navbar';
 @import 'fontfaces';
 
 
+@import 'navbar';
+@import 'homepage';
+
+$light_grey_background_color: #FFFFFF;
 
 body {
   font-size: 100%;
+  background-color: $light_grey_background_color; 
 }
 
 

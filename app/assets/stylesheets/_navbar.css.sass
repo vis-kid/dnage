@@ -1,23 +1,34 @@
 @import 'fontfaces'
 
 $grey_text_color: #555
+$light_green_background_color: #72D1C2
 
 .navbar
+  margin-left: auto
+  margin-right: auto
   width: 100%
-  height: 72px
+  height: 60px
   background-image: url(grey_background.jpg)
   ul
     list-style-type: none
-    padding-top: 25px
     li
       +span-columns(3)
+      +omega
+      width: 25%
+      padding-top: 13px
       text-align: center
       float: left
       font-size: em(20, 13)
       font-family: $verdana
+      border-right: 2px solid white
+      height: 60px
+      &:last-child
+        border-right: none
+      &:hover
+        background-color: $light_green_background_color 
+        a
+          color: white
       a 
         text-decoration: none
         color: $grey_text_color
-
-.tri
-  +triangle(18px, black, down)
+               
