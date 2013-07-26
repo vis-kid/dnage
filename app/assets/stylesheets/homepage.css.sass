@@ -50,10 +50,31 @@ $blue_background_color: #81ACF6
   +span-columns(12)
   height: 200px
 
-.topics
+.topics_headlines
   margin-top: 620px
-  text-align: center
   ul li
-    +span-columns(4)
+    +span-columns(3.9)
+    +shift(.1)
     height: auto
     img
+
+.topics_examples
+  +outer-container
+  +span-columns(12)
+  margin-top: 500px
+
+.companies, .topics, .people
+  +span-columns(3.9)
+  +shift(.1)
+  
+
+.companies
+
+.topics
+
+.people
+
+.companies, .topics, .people
+  ul li
+    font-size: 30px
+    line-height: 1.5em
