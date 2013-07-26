@@ -1,13 +1,13 @@
 $blue_background_color: #81ACF6
 
-.blue
+.squares_up
   +span-columns(12)
   margin-top: -8px
   height: 12px
   background-image: url(blue_square.png)
   background-repeat:repeat-y
 
-.down
+.squares_down
   background-image: url(blue_square_down.png)
   background-repeat:repeat-y
   background-image: red
@@ -45,5 +45,15 @@ $blue_background_color: #81ACF6
     max-width: auto
     width: 100%
 
-.pillow
+.homepage.second_line 
+  +outer-container
+  +span-columns(12)
   height: 200px
+
+.topics
+  margin-top: 620px
+  text-align: center
+  ul li
+    +span-columns(4)
+    height: auto
+    img
