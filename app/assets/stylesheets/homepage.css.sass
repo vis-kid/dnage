@@ -1,18 +1,35 @@
+.pillow
+  height: 400px
+
 $blue_background_color: #81ACF6
 
-.squares_up
-  +span-columns(12)
-  margin-top: -8px
-  height: 12px
-  background-image: url(blue_square.png)
-  background-repeat:repeat-y
+// SQUARE LINES
 
-.squares_down
-  background-image: url(blue_square_down.png)
-  background-repeat:repeat-y
-  background-image: red
+=squares($image)
+  background-image: url($image)
   height: 27px
+  background-repeat: repeat
+
+.blue_squares_up
+  +span-columns(12)
+  +squares('blue_square.png')
+  margin-top: -8px
+
+.blue_squares_down
+  +squares('blue_square_down.png')
   margin-top: -3px
+
+.green_squares_up
+  +squares('green_square_up.png')
+  margin-top: -28px
+
+.green_squares_down
+  +squares('green_square_down.png')
+  margin-top: 453px
+
+
+
+// FIRST LINE
 
 .homepage.first-line
   height: 425px
@@ -44,6 +61,11 @@ $blue_background_color: #81ACF6
   img
     max-width: auto
     width: 100%
+
+
+
+
+// SECOND LINE
 
 .homepage.second_line 
   +outer-container
@@ -78,3 +100,16 @@ $blue_background_color: #81ACF6
   ul li
     font-size: 30px
     line-height: 1.5em
+    font-family: $helvetica
+    color: $grey_text_color 
+
+
+
+// THIRD LINE
+
+.homepage.third_line
+  height: 455px
+  margin-top: 980px
+  border-top: 2px solid white
+  border-bottom: 2px solid white
+  background-color: $light_green_background_color
