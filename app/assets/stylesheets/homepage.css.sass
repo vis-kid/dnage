@@ -61,7 +61,7 @@ $blue_background_color: #81ACF6
   img
     max-width: auto
     width: 100%
-
+    
 .dna_logo
   text-align: center
   img
@@ -69,9 +69,11 @@ $blue_background_color: #81ACF6
     margin-top: -1000px
     position: relative
     top: 340px
-    z-index: 5
-    max-width: 145px
+    max-width: 160px
 
+.play_video
+  z-index: 10
+  margin-top: 50px
   
 // SECOND LINE
 
@@ -145,3 +147,19 @@ $blue_background_color: #81ACF6
   text-align: center
 
 
+
+// FOURTH LINE
+
+.homepage.fourth_line
+  +outer-container
+
+.newsletter, .newsletter_send_button
+  +span-columns(2)
+
+.newsletter
+  +shift(1.3)
+  margin-top: 70px
+
+.newsletter_send_button
+  +shift(4.6)
+  margin-top: 67px
