@@ -1,6 +1,11 @@
 $light_grey_background_color: #F5F4F5
 $grey_text_color: #555
 
+.grey_squares_up
+  background-image: url('grey_square_up.png')
+  background-repeat: repeat
+  height: 17px
+
 .footer
   width: 100%
   height: 80px
@@ -8,16 +13,14 @@ $grey_text_color: #555
   ul
     list-style-type: none
     li
-      +span-columns(2)
-      +omega
+      width: 16.66666667%
       float: left
-      padding-top: 30px
+      padding-top: 25px
       text-align: center
       height: 80px
       &:hover
-        background-color: darken($light_grey_background_color, 30%)
         a 
-          color: white
+          color: #82DACD
       a
         color: $grey_text_color
         text-decoration: none
