@@ -5,27 +5,24 @@ $blue_background_color: #81ACF6
 
 // SQUARE LINES
 
-=squares($image)
+=squares($image, $margin-top)
   background-image: url($image)
   height: 27px
   background-repeat: repeat
+  margin-top: $margin-top
 
 .blue_squares_up
   +span-columns(12)
-  +squares('blue_square.png')
-  margin-top: -8px
+  +squares('blue_square.png', -8px)
 
 .blue_squares_down
-  +squares('blue_square_down.png')
-  margin-top: 1px
+  +squares('blue_square_down.png', 1px)
 
 .green_squares_up
-  +squares('green_square_up.png')
-  margin-top: -28px
+  +squares('green_square_up.png', -28px)
 
 .green_squares_down
-  +squares('green_square_down.png')
-  margin-top: 23px
+  +squares('green_square_down.png', 23px)
 
 
 
