@@ -1,3 +1,5 @@
+@import 'custom_mixins'
+
 .pillow
   height: 400px
 
@@ -5,24 +7,18 @@ $blue_background_color: #81ACF6
 
 // SQUARE LINES
 
-=squares($image, $margin-top)
-  background-image: url($image)
-  height: 27px
-  background-repeat: repeat
-  margin-top: $margin-top
-
 .blue_squares_up
   +span-columns(12)
-  +squares('blue_square.png', -8px)
+  +square_line('blue_square.png', -8px)
 
 .blue_squares_down
-  +squares('blue_square_down.png', 1px)
+  +square_line('blue_square_down.png', 1px)
 
 .green_squares_up
-  +squares('green_square_up.png', -28px)
+  +square_line('green_square_up.png', -28px)
 
 .green_squares_down
-  +squares('green_square_down.png', 23px)
+  +square_line('green_square_down.png', 23px)
 
 
 
