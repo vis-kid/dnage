@@ -1,5 +1,3 @@
-@import 'custom_mixins'
-
 .pillow
   height: 400px
 
@@ -29,43 +27,41 @@ $blue_background_color: #81ACF6
   background-color: $blue_background_color
   border-bottom: 2px solid white
 
-.startupdnage_text_logo
+.startupdnage_text_logo, .big_green_top_banner, .homepage_first_line_subheader
   text-align: center
+
+.startupdnage_text_logo
   img
     margin-top: 53px
     height: 80px
 
 .big_green_top_banner 
-  text-align: center
   img
     margin-top: 40px
 
 .homepage_first_line_subheader
-  text-align: center
   img
     margin-top: 52px
 
-.gallery
+.homepage_gallery
+  overflow: hidden
   margin-top: 35px
   height: 550px
-  overflow: hidden
   img
     max-width: auto
     width: 100%
     
-.dna_logo
+.dna_logo_play_button
   text-align: center
   img
-    cursor: pointer
-    margin-top: -1000px
     position: relative
     top: 340px
+    cursor: pointer
+    margin-top: -1000px
     max-width: 160px
 
-.play_video
-  z-index: 10
-  margin-top: 50px
   
+
 // SECOND LINE
 
 .homepage_second_line 
@@ -91,18 +87,12 @@ $blue_background_color: #81ACF6
   +shift(.1)
   margin-top: 7px
   
-
-.companies
-
-.topics
-
-.people
-
 .companies, .topics, .people
   ul li
-    font-size: 30px
+    font:
+      size: 30px
+      family: $helvetica
     line-height: 2.01em
-    font-family: $helvetica
     color: $grey_text_color 
 
 
@@ -112,8 +102,9 @@ $blue_background_color: #81ACF6
 .homepage_third_line
   height: 455px
   margin-top: 1076px
-  border-top: 2px solid white
-  border-bottom: 2px solid white
+  border:
+    top: 2px solid white
+    bottom: 2px solid white
   background-color: $light_green_background_color
 
 .round_company_logos
