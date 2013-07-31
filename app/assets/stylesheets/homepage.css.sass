@@ -3,7 +3,7 @@
 
 $blue_background_color: #81ACF6
 
-// SQUARE LINES
+// SQUARE DIVIDERS
 
 .blue_squares_up
   +span-columns(12)
@@ -27,7 +27,7 @@ $blue_background_color: #81ACF6
   background-color: $blue_background_color
   border-bottom: 2px solid white
 
-.startupdnage_text_logo, .big_green_top_banner, .homepage_first_line_subheader
+.startupdnage_text_logo, .big_green_top_banner, .homepage_first_line_subheader, .dna_logo_play_button
   text-align: center
 
 .startupdnage_text_logo
@@ -52,7 +52,6 @@ $blue_background_color: #81ACF6
     width: 100%
     
 .dna_logo_play_button
-  text-align: center
   img
     position: relative
     top: 340px
@@ -74,11 +73,8 @@ $blue_background_color: #81ACF6
   ul li
     +span-columns(3.9)
     +shift(.1)
-    height: auto
-    img
 
 .topics_examples
-  +outer-container
   +span-columns(12)
   margin-top: 500px
 
@@ -86,14 +82,12 @@ $blue_background_color: #81ACF6
   +span-columns(3.9)
   +shift(.1)
   margin-top: 7px
-  
-.companies, .topics, .people
   ul li
-    +transition(background-color .05s ease-in)
     font:
       size: 30px
       family: $helvetica
     line-height: 2.01em
+    +transition(background-color .05s ease-in)
     &:hover
       background-color: lighten($blue_background_color, 3%)
       a
@@ -117,12 +111,14 @@ $blue_background_color: #81ACF6
 
 .round_company_logos
   +outer-container
-  +shift(1)
+  +shift(1.2)
   margin-top: 40px
   ul li
     +span-columns(2)
     +omega
-    text-align: center
+
+.round_company_logos, .icon_section_first_header, .icon_section_second_header, .icon_section_third_header
+  text-align: center
 
 .icon_section_first_header
   margin-top: 47px
@@ -132,9 +128,6 @@ $blue_background_color: #81ACF6
 
 .icon_section_third_header
   margin-top: 38px
-
-.icon_section_first_header, .icon_section_second_header, .icon_section_third_header
-  text-align: center
 
 
 
@@ -147,10 +140,10 @@ $blue_background_color: #81ACF6
   +span-columns(2)
 
 .newsletter
-  +shift(1.3)
+  +shift(1.6)
   margin-top: 70px
 
 .newsletter_send_button
-  +shift(4.6)
+  +shift(4.5)
   margin-top: 67px
   cursor: pointer
