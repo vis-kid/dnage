@@ -5,6 +5,10 @@ $light_green_background_color: #82DACD
   width: 100%
   height: 60px
   background-image: url(grey_background.jpg)
+  a 
+    +transition(color, .05s  ease-in)
+    text-decoration: none
+    color: $grey_text_color
   ul
     list-style-type: none
     li
@@ -14,7 +18,6 @@ $light_green_background_color: #82DACD
       width: 25%
       padding-top: 13px
       text-align: center
-      float: left
       font:
         size: em(18, 13)
         family: $helvetica
@@ -26,8 +29,4 @@ $light_green_background_color: #82DACD
         background-color: $light_green_background_color 
         a
           color: white
-      a 
-        +transition(color, .05s  ease-in)
-        text-decoration: none
-        color: $grey_text_color
                

@@ -9,6 +9,12 @@ $green_text_link_color: #82DACD
   width: 100%
   height: 62px
   background-color: $light_grey_background_color
+  a
+    +transition(color, .2s  ease-in)
+    color: $grey_text_color
+    text-decoration: none
+    font-size: em(16, 13)
+    font-family: $helvetica
   ul
     list-style-type: none
     li
@@ -20,9 +26,3 @@ $green_text_link_color: #82DACD
       &:hover
         a 
           color: darken($green_text_link_color, 20%)
-      a
-        +transition(color, .2s  ease-in)
-        color: $grey_text_color
-        text-decoration: none
-        font-size: em(16, 13)
-        font-family: $helvetica

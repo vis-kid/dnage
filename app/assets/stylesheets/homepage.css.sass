@@ -20,14 +20,15 @@ $blue_background_color: #81ACF6
 
 
 
-// FIRST LINE
+// FIRST LINE *********************************
 
 .homepage_first-line
   height: 459px
   background-color: $blue_background_color
   border-bottom: 2px solid white
 
-.startupdnage_text_logo, .big_green_top_banner, .homepage_first_line_subheader, .dna_logo_play_button
+.startupdnage_text_logo, .big_green_top_banner,
+.homepage_first_line_subheader, .dna_logo_play_button
   text-align: center
 
 .startupdnage_text_logo
@@ -61,7 +62,7 @@ $blue_background_color: #81ACF6
 
   
 
-// SECOND LINE
+// SECOND LINE *********************************
 
 .homepage_second_line 
   +outer-container
@@ -82,6 +83,10 @@ $blue_background_color: #81ACF6
   +span-columns(3.9)
   +shift(.1)
   margin-top: 7px
+  a
+    +transition(color .05s ease-in)
+    color: $grey_text_color 
+    text-decoration: none
   ul li
     font:
       size: 30px
@@ -92,14 +97,10 @@ $blue_background_color: #81ACF6
       background-color: lighten($blue_background_color, 3%)
       a
         color: white
-    a
-      +transition(color .05s ease-in)
-      color: $grey_text_color 
-      text-decoration: none
       
 
 
-// THIRD LINE
+// THIRD LINE *********************************
 
 .homepage_third_line
   height: 455px
@@ -109,15 +110,8 @@ $blue_background_color: #81ACF6
     bottom: 2px solid white
   background-color: $light_green_background_color
 
-.round_company_logos
-  +outer-container
-  +shift(1.2)
-  margin-top: 40px
-  ul li
-    +span-columns(2)
-    +omega
-
-.round_company_logos, .icon_section_first_header, .icon_section_second_header, .icon_section_third_header
+.round_company_logos, .icon_section_first_header,
+.icon_section_second_header, .icon_section_third_header
   text-align: center
 
 .icon_section_first_header
@@ -129,9 +123,15 @@ $blue_background_color: #81ACF6
 .icon_section_third_header
   margin-top: 38px
 
+.round_company_logos
+  +outer-container
+  +shift(1.2)
+  margin-top: 40px
+  ul li
+    +span-columns(2)
+    +omega
 
-
-// FOURTH LINE
+// FOURTH LINE *********************************
 
 .homepage_fourth_line
   +outer-container
