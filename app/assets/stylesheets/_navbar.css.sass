@@ -10,6 +10,7 @@ $light_green_background_color: #82DACD
     li
       +span-columns(3)
       +omega
+      +transition(background-color, .05s  ease-in)
       width: 25%
       padding-top: 13px
       text-align: center
@@ -26,6 +27,7 @@ $light_green_background_color: #82DACD
         a
           color: white
       a 
+        +transition(color, .05s  ease-in)
         text-decoration: none
         color: $grey_text_color
                
