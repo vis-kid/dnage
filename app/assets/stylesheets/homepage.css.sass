@@ -89,12 +89,20 @@ $blue_background_color: #81ACF6
   
 .companies, .topics, .people
   ul li
+    +transition(background-color .05s ease-in)
     font:
       size: 30px
       family: $helvetica
     line-height: 2.01em
-    color: $grey_text_color 
-
+    &:hover
+      background-color: lighten($blue_background_color, 3%)
+      a
+        color: white
+    a
+      +transition(color .05s ease-in)
+      color: $grey_text_color 
+      text-decoration: none
+      
 
 
 // THIRD LINE
