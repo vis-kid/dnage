@@ -42,7 +42,7 @@ $blue_background_color: #81ACF6
 
 .homepage_first_line_subheader
   img
-    margin-top: 52px
+    margin-top: 46px
 
 .homepage_gallery
   overflow: hidden
@@ -70,15 +70,16 @@ $blue_background_color: #81ACF6
   height: 200px
 
 .topics_headlines
-  margin-top: 637px
+  margin-top: 629px
   ul li
     +span-columns(3.9)
     +shift(.1)
     padding-left: 5px
 
 .topics_examples
+  +outer-container
   +span-columns(12)
-  margin-top: 500px
+  margin-top: 522px
 
 .companies, .topics, .people
   +span-columns(3.9)
@@ -89,11 +90,13 @@ $blue_background_color: #81ACF6
     color: $grey_text_color 
     text-decoration: none
     padding-left: 5px
+    display: block
   ul li
     font:
       size: 30px
       family: $helvetica
     line-height: 2.01em
+    cursor: pointer
     +transition(background-color .05s ease-in)
     &:hover
       background-color: lighten($blue_background_color, 3%)
@@ -117,7 +120,7 @@ $blue_background_color: #81ACF6
   text-align: center
 
 .icon_section_first_header
-  margin-top: 47px
+  margin-top: 38px
 
 .icon_section_second_header
   margin-top: 35px
@@ -143,9 +146,9 @@ $blue_background_color: #81ACF6
 
 .newsletter
   +shift(1.6)
-  margin-top: 70px
+  margin-top: 72px
 
 .newsletter_send_button
   +shift(4.5)
-  margin-top: 67px
+  margin-top: 72px
   cursor: pointer

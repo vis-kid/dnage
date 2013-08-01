@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= yield(:page_title) %></title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <link rel="stylesheet" href="http://basehold.it/30">
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-  </head>
+<head>
+  <title><%= yield(:page_title) %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <!--<link rel="stylesheet" href="http://basehold.it/30">-->
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'shared/navbar' %>
 
-  <body>
-    <%= render 'shared/navbar' %>
+  <%= yield %>
 
-    <%= yield %>
-
-    <%= render 'shared/footer' %>
-  </body>
+  <%= render 'shared/footer' %>
+</body>
 </html>
