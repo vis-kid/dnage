@@ -1,8 +1,50 @@
+$light_background_color: white
+
 .white_squares_up
   +span-columns(12)
   +square_line('white_square_up.png', -8px)
 
 .user_profile
   +outer-container
-  height: 400px
+  height: 670px
+  background-color: $light_background_color
+
+.name_profilepic_contact_section
+  +span-columns(10)
+  +shift(1)
+  +omega
+  height: 290px
   background-color: red
+
+.user_name
+  +span-columns(5)
+  +shift(1)
+  height: 50px
+  background-color: green
+
+.profile_picture
+  +span-columns(5)
+  height: 260px
+  background-color: green
+
+.twitter_handle
+  +span-columns(5)
+  +shift(1)
+  margin-top: -100px
+  height: 40px
+  background-color: yellow
+
+.weblink
+  +span-columns(5)
+  +shift(1)
+  height: 40px
+  background-color: blue
+  margin-top: -41px
+  
+.user_name, .profile_picture, .twitter_handle, .weblink
+
+.text_section
+  +span-columns(10)
+  +shift(1)
+  background-color: blue
+  height: 315px
