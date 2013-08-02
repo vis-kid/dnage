@@ -6,45 +6,57 @@ $light_background_color: white
 
 .user_profile
   +outer-container
-  height: 670px
+  margin-top: 70px
   background-color: $light_background_color
 
-.name_profilepic_contact_section
+.name_profilepic_contact_section, 
+.text_section
   +span-columns(10)
   +shift(1)
   +omega
+
+.name_profilepic_contact_section
   height: 290px
   background-color: red
 
+.user_name, .twitter_handle, .weblink
+  +span-columns(6)
+  +omega
+
+.twitter_handle, .weblink
+  height: 40px
+
 .user_name
-  +span-columns(5)
-  +shift(1)
   height: 50px
   background-color: green
 
+.white_squares_down
+  +square_line('white_square_down.png', -18px)
+
 .profile_picture
-  +span-columns(5)
+  +outer-container
+  +shift(5.85)
   height: 260px
   background-color: green
 
 .twitter_handle
-  +span-columns(5)
-  +shift(1)
   margin-top: -100px
-  height: 40px
   background-color: yellow
 
 .weblink
-  +span-columns(5)
-  +shift(1)
-  height: 40px
-  background-color: blue
   margin-top: -41px
+  background-color: blue
   
-.user_name, .profile_picture, .twitter_handle, .weblink
-
 .text_section
+  height: 310px
+  background-color: blue
+
+.interviewee_videos
+  +outer-container
   +span-columns(10)
   +shift(1)
-  background-color: blue
-  height: 315px
+  margin:
+    top: 35px
+    bottom: 35px
+  height: 500px
+  background-color: green
