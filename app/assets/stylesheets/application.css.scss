@@ -12,8 +12,8 @@
  */
 @import 'normalize';
 @import 'bourbon';
-@import 'neat';
 @import 'grid-settings';
+@import 'neat';
 @import 'fontfaces';
 @import 'custom_mixins';
 
@@ -21,6 +21,8 @@
 @import 'footer';
 @import 'homepage';
 @import 'profile';
+@import 'videos';
+@import 'tags';
 
 $light_grey_background_color: #FFFFFF;
 
