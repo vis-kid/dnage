@@ -1,59 +1,53 @@
 $blue_background_color: #81ACF6
 
-.blue_top_line
-  height: 1px
+.blue_top_line, .video_container
   background-color: $blue_background_color
+
+.blue_top_line
+  height: 3px
 
 .video_container
   width: 100%
-  height: 775px
-  background-color: $blue_background_color
+  height: 773px
   border:
-    top: 1px solid white
+    top: 2px solid white
     bottom: 1px solid white
-    
-.blue_squares_down
-  +square_line('blue_square_down.png', 1px)
+
+.top_quote, .video_title, .interviewee_name,
+.video_description
+  +span-columns(10)
+  
+.top_quote, .video, .video_title, .interviewee_name,
+.video_description, .video_source_links
+  background-color: red
+
+.top_quote, .video_title, .interviewee_name,
+.video_description, .video
+  +shift(1)
+
+.top_quote, .video_title, .video, .interviewee_name, .video_description
+  margin-top: 10px
+
+.video_title, .interviewee_name
+  height: 35px
 
 .top_quote
-  +span-columns(10)
-  +shift(1)
-  margin-top: 10px
   height: 50px
-  background-color: red
-
-.video_title
-  +span-columns(10)
-  +shift(1)
-  margin-top: 10px
-  height: 35px
-  background-color: red
 
 .video
   +span-columns(7)
-  +shift(1)
-  margin-top: 10px
   height: 290px
-  background-color: red
 
 .video_source_links
   +span-columns(3)
-  margin-top: 240px
+  margin-top: 239px
   height: 60px
-  background-color: red
-
-.interviewee_name
-  +span-columns(10)
-  +shift(1)
-  margin-top: 10px
-  height: 35px
-  background-color: red
 
 .video_description
-  +span-columns(10)
-  +shift(1)
-  margin-top: 10px
   height: 240px
-  background-color: red
 
+.video_pillow
+  margin-bottom: 100px
 
+.blue_squares_down
+  +square_line('blue_square_down.png', 1px)
