@@ -1,42 +1,46 @@
-<article>
 <div class='blue_top_line'>
 </div>
-  <div class='video_container'>
 
-    <header>
-      <div class='top_quote'>
-        video.top_quote
+<div class='interviewee_videos'>
+  <article>
+    <div class='video_container'>
+  
+      <header>
+        <div class='top_quote'>
+          video.top_quote
+        </div>
+        <div class='video_title'>
+          video.title
+        </div>
+      </header>
+      
+      <div class='video'>
+        @video
       </div>
-      <div class='video_title'>
-        video.title
+  
+      <aside>
+        <div class='video_source_links'>
+          <ul>
+            <li>video.youtube</li>
+            <li>video.vimeo</li>
+        </div>
+      </aside>
+      
+      <div class='interviewee_name'>
+        @interviewee.name
       </div>
-    </header>
-    
-    <div class='video'>
-      @video
-    </div>
-
-    <aside>
-      <div class='video_source_links'>
-        <ul>
-          <li>video.youtube</li>
-          <li>video.vimeo</li>
+  
+      <div class='video_description'>
+        video.description
       </div>
-    </aside>
-    
-    <div class='interviewee_name'>
-      @interviewee.name
+  
+      <%= render 'shared/tags' %>
+  
     </div>
-
-    <div class='video_description'>
-      video.description
-    </div>
-
-    <%= render 'shared/tags' %>
-
-  </div>
+  </article>
+</div>
 <div class='blue_squares_down'>
 </div>
-</article>
+
 <div class='video_pillow'>
 </div>
