@@ -3,14 +3,16 @@ $light_green_background_color: #82DACD
 
 .navbar
   width: 100%
-  height: 60px
+  height: 65px
   background-image: url(grey_background.jpg)
   a 
     +transition(color, .05s  ease-in)
     text-decoration: none
     color: $grey_text_color
     display: block
-    height: 46px
+    height: 55px
+    &:hover
+      background-color: $light_green_background_color
   ul
     list-style-type: none
     li
@@ -18,7 +20,7 @@ $light_green_background_color: #82DACD
       +omega
       +transition(background-color, .05s  ease-in)
       width: 25%
-      padding-top: 13px
+      padding-top: 15px
       text-align: center
       font:
         size: em(18, 13)
