@@ -2,8 +2,29 @@
   margin-top: 47px
   text-align: center
 
-.interviewee_box
+.interviewee_box_outer_container
   background-color: $blue_background_color
-  margin-top: 1px
   height: 434px
+  
+.interviewee_box
+  +outer-container
+  margin:
+    top: 1px
 
+.interviewee_list_name
+  +span-columns(7)
+  +shift(1)
+  @extend user_name 
+  margin-top: 10px
+  height: 35px
+  background-color: green
+
+.video_counter
+  +span-columns(3)
+  margin-top: 10px
+  height: 35px
+  background-color: yellow
+
+.people_pillow 
+  margin:
+    bottom: 100px
