@@ -11,52 +11,73 @@
   margin:
     top: 1px
 
-.interviewee_list_name
-  +span-columns(7)
-  +shift(1)
-  @extend user_name 
-  margin-top: 10px
-  height: 35px
-  background-color: green
 
-.video_counter
-  +span-columns(3)
-  margin-top: 10px
-  height: 35px
-  background-color: yellow
+.interviewee_box
+  .interviewee_name,
+  .profile_picture,
+  .about_text,
+  .twitter_handle,
+  .weblink,
+  .tags,
+  .video_counter  
+    background-color: green
 
-.interviewee_list_box.profile_picture
-  +span-columns(4)
-  +shift(1)
-  margin-top: 20px
-  height: 200px
-  background-color: red
+.interviewee_box  
+  .profile_picture,
+  .twitter_handle,
+  .weblink,
+  .interviewee_name
+    +shift(1)
 
-.interviewee_list_box.blue_squares_down
-  margin-top: -20px
+.interviewee_box  
+  .interviewee_name
+    +span-columns(7)
+    
+.interviewee_box  
+  .video_counter
+    +span-columns(3)
 
-.interviewee_list_box.about_text
-  +span-columns(6)
-  height: 200px
-  margin-top: 20px
-  background-color: red
+.interviewee_box  
+  .profile_picture,
+  .twitter_handle,
+  .weblink
+    +span-columns(4)
 
-.interviewee_list_box.twitter_handle
-  margin-top: 10px
-  +span-columns(4)
-  +shift(1)
+.interviewee_box  
+  .about_text, 
+  .tags 
+    +span-columns(6)
 
-.interviewee_list_box.tags
-  +span-columns(6)
-  margin-left: 0px
-  height: 90px
-  overflow: hidden
+.interviewee_box  
+  .interviewee_name,
+  .twitter_handle,
+  .video_counter
+    margin-top: 10px
 
-.interviewee_list_box.weblink
-  +span-columns(4)
-  +shift(1)
-  margin-top: -40px
+.interviewee_box  
+  .profile_picture, 
+  .about_text
+    margin-top: 20px
+    height: 200px
 
+.interviewee_box  
+  .interviewee_name,
+  .video_counter
+    height: 35px
+
+.interviewee_box  
+  .blue_squares_down
+    margin-top: -20px
+
+.interviewee_box  
+  .tags
+    margin-left: 0px
+    height: 90px
+    overflow: hidden
+
+.interviewee_box  
+  .weblink
+    margin-top: -40px
 
 .people_pillow 
   margin:
